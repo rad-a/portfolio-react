@@ -14,13 +14,14 @@ function Footer() {
           <Col className="footerContent d-flex p-0">
             <h4>Find me on the web</h4>
             <Row className="socialIcons">
-              <a href="https://www.linkedin.com/in/rachaeladu" target="_blank">
+            {/* rel="noopener noreferrer" added to links with 'target="_blank"' to protect user against potential threats */}
+              <a href="https://www.linkedin.com/in/rachaeladu" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="fa-2x m-2" />
               </a>
-              <a href="https://github.com/rad-a" target="_blank">
+              <a href="https://github.com/rad-a" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="fa-2x m-2" />
               </a>
-              <a href="https://twitter.com/arachael_" target="_blank">
+              <a href="https://twitter.com/arachael_" target="_blank" rel="noopener noreferrer">
                 <FaTwitterSquare className="fa-2x m-2" />
               </a>
             </Row>
