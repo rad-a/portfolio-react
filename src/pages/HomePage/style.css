@@ -1,0 +1,71 @@
+.profileContainer {
+  background: url("./images/profile-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.profileContent {
+  display: flex;
+  align-content: center;
+  min-height: 100vh;
+}
+
+#profileText {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px !important;
+  align-items: center;
+  color: #726742;
+  text-align: center;
+}
+
+#profileText h1 {
+  font-family: "Fjalla One", cursive;
+  font-size: 84px;
+  color: #26422e;
+  margin-bottom: 25px;
+  -webkit-text-stroke: 1px #26422e;
+  text-shadow: 0px 1px 4px #856c1a;
+}
+
+#profileText h3,
+#profileText h5 {
+  font-weight: 600;
+}
+
+#profileText button {
+  margin-top: 25px;
+  border: 3px solid #26422e;
+}
+
+@media only screen and (max-width: 39.9995em) {
+  .profileContent {
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+
+  #profileImg {
+    max-height: 250px;
+  }
+
+  #profileText {
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  #profileText h1 {
+    font-size: 2rem;
+  }
+
+  #profileText h3 {
+    font-size: 1.3rem;
+  }
+
+  #profileText h5 {
+    font-size: 1rem;
+  }
+}
