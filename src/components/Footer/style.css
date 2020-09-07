@@ -1,0 +1,19 @@
+.footer {
+  background-color: rgb(72, 93, 60);
+  color: rgb(243, 192, 29);
+  position: relative;
+}
+
+.footer a {
+  color: rgb(243, 192, 29);
+}
+
+.footerContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+.footerContent {
+  flex-direction: column;
+  align-items: center;
+}
