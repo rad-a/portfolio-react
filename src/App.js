@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import "./App.css";
 
@@ -9,11 +9,6 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
-
-// import Home from './pages/Home';
-// import Projects from './pages/Projects';
-// import Contact from './pages/Contact';
-// import About from './pages/About';
 
 class App extends Component {
   constructor(props) {
@@ -27,9 +22,11 @@ class App extends Component {
         { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "Hi, I'm Rachael",
-        subTitle: "Developer, Designer, and Tea Enthusiast.",
-        introText: "I am a web developer based in Austin, Texas.",
+        title: "HI, I'M RACHAEL",
+        subTitle: "< Developer | Designer | Tea Enthusiast />",
+        introText:
+          "I am a web developer based in Austin, Texas. I enjoy coding and building efficient applications.",
+        actionText: "More About Me",
       },
       about: {
         title: "About",
@@ -49,10 +46,6 @@ class App extends Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <TopNavbar />
-          {/* <Switch>
-            <Route component={AboutPage} path="/about" />
-            <Route component={ProjectsPage} path="/projects" />
-            <Route component={ContactPage} path="/contact" /> */}
 
           {/* Define routes and set state for each page. */}
           <Switch>
@@ -64,6 +57,7 @@ class App extends Component {
                   title={this.state.home.title}
                   subTitle={this.state.home.subTitle}
                   introText={this.state.home.introText}
+                  actionText={this.state.home.actionText}
                 />
               )}
             />
