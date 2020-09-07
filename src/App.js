@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import TopNavbar from "./components/TopNavbar";
 import "./App.css";
+
+import TopNavbar from "./components/TopNavbar";
+import Footer from "./components/Footer";
 
 // import Home from './pages/Home';
 // import Projects from './pages/Projects';
@@ -43,6 +45,7 @@ class App extends Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <TopNavbar />
+          <Footer />
         </Container>
       </Router>
     );
