@@ -1,30 +1,52 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {  Switch } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import TopNavbar from "./components/TopNavbar";
+import "./App.css";
 
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import NavPills from './components/NavPills';
+// import Home from './pages/Home';
+// import Projects from './pages/Projects';
+// import Contact from './pages/Contact';
+// import About from './pages/About';
 
-// import './App.css';
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "Rachael Adu",
+      headerLinks: [
+        { title: "Home", path: "/" },
+        { title: "About", path: "/about" },
+        { title: "Projects", path: "/projects" },
+        { title: "Contact", path: "/contact" },
+      ],
+      home: {
+        title: "Hi, I'm Rachael",
+        subtitle: "Developer, Designer, and Tea Enthusiast.",
+        introText: "I am a web developer based in Austin, Texas.",
+      },
+      about: {
+        title: "About",
+        subtitle: "My Skills",
+      },
+      projects: {
+        title: "My Projects",
+      },
+      contact: {
+        title: "Contact",
+      },
+    };
+  }
 
-function App() {
-  return (
-    <Router>
-    <NavPills />
-
-      <div>
-        <h1>This is the Root Component </h1>
-        {/* Using Switch to match only one route at a time. Negates the need for 'exact' keyword. */}
-        <Switch>
-          <Route path='/contact' component={Contact} />
-          <Route path='/projects' component={Projects} />
-          <Route path='/' component={Home} />
-        </Switch>
-      </div>
-    </Router>
-  );
+  render() {
+    return (
+      <Router>
+        <Container className="p-0" fluid={true}>
+          <TopNavbar />
+        </Container>
+      </Router>
+    );
+  }
 }
 
 export default App;
