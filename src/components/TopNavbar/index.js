@@ -7,7 +7,7 @@ import "./style.css";
 
 function TopNavbar() {
   return (
-    <Navbar className="navbar" expand="lg">
+    <Navbar className="navbar" expand="lg" fixed="top">
       <Navbar.Brand className="navbar-brand" href="/">
         RACHAEL ADU
       </Navbar.Brand>
