@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import "./App.css";
 
@@ -29,14 +29,14 @@ class App extends Component {
         actionText: "More About Me",
       },
       about: {
-        title: "About",
-        subTitle: "My Skills",
+        title: "ABOUT",
+        subTitle: "MY SKILLS",
       },
       projects: {
-        title: "My Projects",
+        title: "MY PROJECTS",
       },
       contact: {
-        title: "Contact",
+        title: "CONTACT",
       },
     };
   }
@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container className="mainContainer p-0" fluid={true}>
           <TopNavbar />
 
           {/* Define routes and set state for each page. */}
@@ -79,7 +79,7 @@ class App extends Component {
               render={() => <ContactPage title={this.state.contact.title} />}
             />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </Container>
       </Router>
     );
