@@ -11,7 +11,7 @@ function ProjectCard(props) {
       </Card.Header>
       <Card.Body>
         {/* <Card.Title> {props.name} </Card.Title> */}
-        <Card.Image> {props.image} </Card.Image>
+    {/* <Card.Image> {props.image} </Card.Image> */ }
         <Card.Title> {props.name} </Card.Title>
         <Card.Text> {props.description} </Card.Text>
 
