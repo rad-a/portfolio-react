@@ -33,7 +33,7 @@ class App extends Component {
         subTitle: "MY SKILLS",
       },
       projects: {
-        title: "MY PROJECTS",
+        title: "PROJECTS",
       },
       contact: {
         title: "CONTACT",

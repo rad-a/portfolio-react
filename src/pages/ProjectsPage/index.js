@@ -1,11 +1,16 @@
 import React from "react";
 
+import ProjectContainer from "../../components/ProjectContainer/";
+import Header from "../../components/Header";
+
 function ProjectsPage(props) {
-    return (
-<div>
-    <h2>Projects works!</h2>
-</div>
-    )
+  return (
+    <div className="mainContent">
+      <Header title={props.title} />
+
+      <ProjectContainer />
+    </div>
+  );
 }
 
 export default ProjectsPage;
