@@ -1,3 +1,13 @@
 .formLabel {
     font-weight: 600;
 }
+
+.submitBtn {
+    background-color: rgb(72, 93, 60)!important;
+    border-color: #30553a;
+}
+
+.submitBtn:hover {
+    background-color: #28a745!important;
+    border-color: #28a545;
+}

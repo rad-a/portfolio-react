@@ -67,7 +67,7 @@ export class ContactForm extends Component {
           />
         </Form.Group>
 
-        <Button name="name" type="submit" onChange={this.handleChange}>
+        <Button className="submitBtn" name="name" type="submit" onChange={this.handleChange}>
           <IoIosSend />
           Submit
         </Button>
