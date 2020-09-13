@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { IoIosSend } from "react-icons/io";
-import emailjs from "emailjs-com";
 
 import apiKeys from "../../Assets/apiKeys";
 import "./style.css";
+
+import emailjs from "emailjs-com";
 
 export class ContactForm extends Component {
   constructor(props) {
@@ -21,8 +22,7 @@ export class ContactForm extends Component {
 
   render() {
     return (
-      <Form className="test-mailing">
-
+      <Form id="PortfolioContactForm">
         <Form.Group controlId="contactForm.subjectInput">
           <Form.Label className="formLabel">Subject:</Form.Label>
           <Form.Control
@@ -31,8 +31,8 @@ export class ContactForm extends Component {
             onChange={this.handleChange}
             value={this.state.subject}
           >
-            <option value="0">Let's collaborate</option>
-            <option value="1">Build me something amazing</option>
+            <option value="Collaboration">Let's collaborate</option>
+            <option value="Job Opportunity">Build me something amazing</option>
           </Form.Control>
         </Form.Group>
 
@@ -67,7 +67,12 @@ export class ContactForm extends Component {
           />
         </Form.Group>
 
-        <Button className="submitBtn" name="name" type="submit" onChange={this.handleChange}>
+        <Button
+          className="submitBtn"
+          name="name"
+          type="button"
+          onClick={this.handleSubmit}
+        >
           <IoIosSend />
           Submit
         </Button>
@@ -85,15 +90,21 @@ export class ContactForm extends Component {
     event.preventDefault();
     emailjs
       .sendForm(
-        "contact_me",
+        "gmail_contact_me",
         apiKeys.TEMPLATE_ID,
-        event.target,
+        "PortfolioContactForm",
         apiKeys.USER_ID
       )
       .then((result) => {
         console.log(result.text);
       })
       .catch();
+
+    this.setState = {
+      name: "",
+      email: "",
+      message: "",
+    };
   };
 }
 
