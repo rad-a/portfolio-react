@@ -79,7 +79,7 @@ class App extends Component {
               render={() => <ContactPage title={this.state.contact.title} />}
             />
           </Switch>
-          {/* <Footer /> */}
+          <Footer />
         </Container>
       </Router>
     );
