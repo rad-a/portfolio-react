@@ -18,7 +18,7 @@ const MooCard = (props) => {
           {" "}
           Github
         </Button>{" "}
-        <Button variant="secondary" href={props.url} target="_blank">
+        <Button variant="secondary" href={props.url} target="_blank" rel="noopener noreferrer">
           {" "}
           App
         </Button>
