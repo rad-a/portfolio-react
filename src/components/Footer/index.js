@@ -41,7 +41,7 @@ function Footer() {
               2020 &copy;{" "}
               <a
                 href="https://github.com/rad-a/portfolio-react"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 Rachael Adu
               </a>
