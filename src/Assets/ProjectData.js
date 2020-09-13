@@ -44,12 +44,12 @@ export default [
   },
   {
     id: 5,
-    name: "Dog Date",
+    name: "Team Roster Generator",
     image: rosterGenerator,
     url: "",
     repository: "https://github.com/rad-a/team-roster-generator",
     description:
-      "A CLI application that generates a well-formatted team roster HTML based on user input.-",
+      "A CLI application that generates a well-formatted team roster HTML based on user input.",
     role: "",
   },
   {
