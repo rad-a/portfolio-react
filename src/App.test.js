@@ -7,3 +7,13 @@ test('renders learn react link', () => {
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+// {
+//   test: /\.(png|jpg|gif)$/,
+//   use: [
+//     {
+//       loader: 'file-loader',
+//       options: {},
+//     },
+//   ],
+// };
