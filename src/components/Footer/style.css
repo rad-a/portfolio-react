@@ -1,16 +1,14 @@
 .footer {
   background-color: rgb(72, 93, 60);
   color: rgb(243, 192, 29);
-  position: relative;
+  width: 100%;
+  bottom: 0;
+  height: 152px;
+  margin-top: auto;
 }
 
 .footer a {
   color: rgb(243, 192, 29);
-}
-
-.footerContainer {
-  position: absolute;
-  bottom: 0;
 }
 
 .footerContent {
