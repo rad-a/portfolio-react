@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { BsCaretDownFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 import "./style.css";
 
@@ -16,9 +16,11 @@ function HomePage(props) {
           {props.subTitle && <h3>{props.subTitle}</h3>}
           {props.introText && <h5>{props.introText}</h5>}
           {props.actionText && (
-            <Button variant="outline-success">
-              <strong>{props.actionText}</strong>
-            </Button>
+            <Link to="./about">
+              <Button variant="outline-success">
+                <strong>{props.actionText}</strong>
+              </Button>
+            </Link>
           )}
         </Col>
       </Row>
