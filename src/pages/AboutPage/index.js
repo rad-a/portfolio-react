@@ -27,7 +27,8 @@ function AboutPage(props) {
           or enjoying a beautiful Austin day outdoors.
         </p>
         <p className="aboutMeText">
-          Let me <Link to="./contact">help you</Link> build amazing products!
+          Let me <Link to="./contact">help you</Link> build an amazing
+          application!
         </p>
       </Content>
 
