@@ -1,11 +1,9 @@
 import gitIcon from "../pages/AboutPage/icons/git.svg";
 import bootstrapIcon from "../pages/AboutPage/icons/bootstrap.svg";
 import expressIcon from "../pages/AboutPage/icons/express.svg";
-import herokuIcon from "../pages/AboutPage/icons/heroku.svg";
 import jsIcon from "../pages/AboutPage/icons/javascript.svg";
 import htmlIcon from "../pages/AboutPage/icons/html5.svg";
 import jQueryIcon from "../pages/AboutPage/icons/jquery.svg";
-import foundationIcon from "../pages/AboutPage/icons/foundation.svg";
 import githubIcon from "../pages/AboutPage/icons/github.svg";
 import mongodbIcon from "../pages/AboutPage/icons/mongodb.svg";
 import mysqlIcon from "../pages/AboutPage/icons/mysql.svg";
@@ -48,12 +46,6 @@ export default [
     name: expressIcon,
   },
   {
-    id: 4,
-    name: herokuIcon,
-  },
- 
-
-  {
     id: 8,
     name: mysqlIcon,
   },
@@ -67,9 +59,5 @@ export default [
   },  {
     id: 11,
     name: mongodbIcon,
-  },  {
-    id: 12,
-    name: foundationIcon,
-  },
- 
+  }
 ];

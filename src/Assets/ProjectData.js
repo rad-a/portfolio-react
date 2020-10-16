@@ -21,7 +21,7 @@ export default [
     image: burgerApp,
     url: "https://shrouded-beyond-01705.herokuapp.com/burgers",
     repository: "https://github.com/rad-a/burger_picker/",
-    description: "Input and save burgers to eat.",
+    description: "An app that lets you type and add to the list of available burgers and move an available burger to a another list where it becomes no longer available.",
     role: "",
   },
   {
@@ -39,7 +39,7 @@ export default [
     image: workdayScheduler,
     url: "https://rad-a.github.io/work-day-scheduler/",
     repository: "https://rad-a.github.io/work-day-scheduler/",
-    description: "A simple workday planner.",
+    description: "An application that lets you easily schedule tasks hourly.",
     role: "",
   },
   {
