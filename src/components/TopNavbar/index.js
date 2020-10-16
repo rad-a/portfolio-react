@@ -8,13 +8,13 @@ import "./style.css";
 function TopNavbar() {
   return (
     <Navbar className="navbar" expand="lg" fixed="top">
-      <Navbar.Brand className="navbar-brand" href="/">
+      <Navbar.Brand className="navbar-brand" href="/home">
         RACHAEL ADU
       </Navbar.Brand>
       <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
-        <Nav className="ml-auto">
-          <Link className="nav-link" to="/">
+        <Nav className="ml-auto align-items-center">
+          <Link className="nav-link" to="/home">
             Home
           </Link>
           <Link className="nav-link" to="/about">

@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import "./App.css";
 
@@ -16,7 +21,7 @@ class App extends Component {
     this.state = {
       title: "Rachael Adu",
       headerLinks: [
-        { title: "Home", path: "/" },
+        { title: "Home", path: "/home" },
         { title: "About", path: "/about" },
         { title: "Projects", path: "/projects" },
         { title: "Contact", path: "/contact" },
@@ -50,18 +55,6 @@ class App extends Component {
           {/* Define routes and set state for each page. */}
           <Switch>
             <Route
-              exact
-              path="/"
-              render={() => (
-                <HomePage
-                  title={this.state.home.title}
-                  subTitle={this.state.home.subTitle}
-                  introText={this.state.home.introText}
-                  actionText={this.state.home.actionText}
-                />
-              )}
-            />
-            <Route
               path="/about"
               render={() => (
                 <AboutPage
@@ -78,6 +71,21 @@ class App extends Component {
               path="/contact"
               render={() => <ContactPage title={this.state.contact.title} />}
             />
+            <Route
+              exact
+              path="/home"
+              render={() => (
+                <HomePage
+                  title={this.state.home.title}
+                  subTitle={this.state.home.subTitle}
+                  introText={this.state.home.introText}
+                  actionText={this.state.home.actionText}
+                />
+              )}
+            />
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
           </Switch>
           <Footer />
         </Container>
