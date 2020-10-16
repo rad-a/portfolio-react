@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.0ed8fab5.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.10df348b.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.10df348b.chunk.js.map",
+    "main.js": "/portfolio-react/static/js/main.31eb8cfa.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.31eb8cfa.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.11033349.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.11033349.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/portfolio-react/static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.35a3cb0c.chunk.js": "/portfolio-react/static/js/2.35a3cb0c.chunk.js",
-    "static/js/2.35a3cb0c.chunk.js.map": "/portfolio-react/static/js/2.35a3cb0c.chunk.js.map",
+    "static/js/2.c8b99b1c.chunk.js": "/portfolio-react/static/js/2.c8b99b1c.chunk.js",
+    "static/js/2.c8b99b1c.chunk.js.map": "/portfolio-react/static/js/2.c8b99b1c.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "precache-manifest.593a5690cef297aff86292a92ed73d3e.js": "/portfolio-react/precache-manifest.593a5690cef297aff86292a92ed73d3e.js",
+    "precache-manifest.1b3c5cbeab48efc0514668396753dd5e.js": "/portfolio-react/precache-manifest.1b3c5cbeab48efc0514668396753dd5e.js",
     "service-worker.js": "/portfolio-react/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/portfolio-react/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.0ed8fab5.chunk.css.map": "/portfolio-react/static/css/main.0ed8fab5.chunk.css.map",
-    "static/js/2.35a3cb0c.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.35a3cb0c.chunk.js.LICENSE.txt",
+    "static/js/2.c8b99b1c.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.c8b99b1c.chunk.js.LICENSE.txt",
     "static/media/RPG-vn.08e4334a.jpg": "/portfolio-react/static/media/RPG-vn.08e4334a.jpg",
     "static/media/TRG-output-HTML.111997c0.jpg": "/portfolio-react/static/media/TRG-output-HTML.111997c0.jpg",
     "static/media/bootstrap.svg": "/portfolio-react/static/media/bootstrap.76d7c6aa.svg",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.11033349.js",
     "static/css/2.8aa5a7f8.chunk.css",
-    "static/js/2.35a3cb0c.chunk.js",
+    "static/js/2.c8b99b1c.chunk.js",
     "static/css/main.0ed8fab5.chunk.css",
-    "static/js/main.10df348b.chunk.js"
+    "static/js/main.31eb8cfa.chunk.js"
   ]
 }
