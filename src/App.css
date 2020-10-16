@@ -5,10 +5,11 @@ body {
 
 body {
   padding-top: 62px; /*prevents fixed navbar overlap */
+  font-size: 18px;
 }
 
 .mainContainer {
-  height: 100%;
+  min-height: 100vh;
 }
 
 .App {
@@ -17,6 +18,7 @@ body {
 
 .mainContent {
   padding-bottom: 65px;
+  min-height: 95vh;
 }
 
 .App-logo {
